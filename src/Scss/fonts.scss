@@ -1,0 +1,41 @@
+$OpenSans: ('Light', 300),
+           ('Regular', 400),
+           ('SemiBold', 600),
+           ('Bold', 700);
+
+@each $name, $weight in $OpenSans {
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('../assets/fonts/OpenSans-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+
+$Nunito: ('Light', 300), 
+         ('Regular', 400),
+         ('Medium', 500), 
+         ('SemiBold', 600),
+         ('Bold', 700), 
+         ('ExtraBold', 800),
+         ('Black', 900);
+
+@each $name, $weight in $Nunito {
+    @font-face {
+        font-family: 'Nunito';
+        src: url('../assets/fonts/Nunito-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+$Satoshi: ('Light', 300), 
+         ('Regular', 400),
+         ('Medium', 500), 
+         ('Bold', 700), 
+         ('Black', 900);
+
+@each $name, $weight in $Satoshi {
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('../assets/fonts/Satoshi-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}

@@ -1,0 +1,18 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    border-radius: 8px;
+    background: #2D2D2D;
+    padding: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+    &:disabled {
+        background: rgba(45, 45, 45, 0.553);
+    }
+}

@@ -1,0 +1,3 @@
+[submodule "json-store"]
+	path = json-store
+	url = git@github.com:Mokhina27/json-store.git

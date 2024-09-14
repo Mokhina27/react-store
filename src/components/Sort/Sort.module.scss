@@ -1,0 +1,100 @@
+.sort {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .sort__toggle {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffffff;
+    border: 1px solid #DB6B97;
+    color: #dc568c;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+  }
+  
+  .sort__toggle:hover {
+    background-color: rgb(249, 224, 233);
+  }
+  
+  .sort__menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 10px;
+    top: 0;
+    left: 140px;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    white-space: nowrap;
+  }
+  
+  .sort__menu.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .sort__button {
+    padding: 10px 20px;
+    border: 1px solid #DB6B97;
+    color: #DB6B97;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+  .sort__button:hover {
+    background-color:rgb(249, 224, 233);
+  }
+  
+  /* Плавное появление кнопок */
+  .sort__menu.show .sort__button {
+    animation: slideIn 0.3s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .sort__button:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .sort__button:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .sort__button:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .sort__button:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .sort__button:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  

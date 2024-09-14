@@ -1,0 +1,144 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 50px;
+
+    &__images {
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+      gap: 15px;
+    }
+    
+    &__image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 20px;
+      background: rgb(226, 225, 225) 50% / cover no-repeat;
+    }
+  
+    &__image.selected {
+      border: 1px solid #000;
+    }
+    
+    &__main_image {
+      width: 500px;
+      height: 500px;
+      margin-right: 40px;
+    }
+    
+    &__main_image img {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__title {
+      color: #000;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    &__rate {
+      color: #000;
+      font-size: 22px;
+      font-weight: 500;
+
+      &_span {
+        color: rgba(0, 0, 0, 0.60);
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+
+    &__description {
+      color: rgba(0, 0, 0, 0.60);
+      width: 590px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px; 
+    }
+
+    &__price {
+      color: #000;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    &__add_to_cart {
+      display: flex;
+      width: 400px;
+      height: 52px;
+      padding: 16px 54px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 62px;
+      background: #000;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &__quantity_controls {
+      display: flex;
+      width: 170px;
+      height: 52px;
+      padding: 16px 20px;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 62px;
+      background: #F0F0F0;
+    }
+
+    &__quantity_button, 
+    &__quantity_count {
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &__category {
+      color: rgba(0, 0, 0, 0.60);
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 22px; 
+
+      &_span {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+    
+    &__stock {
+      color: rgba(0, 0, 0, 0.60);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px; 
+
+      &_span {
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    
+  }
+
+.loader__container {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  margin-left: 70px;
+}
